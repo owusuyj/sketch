@@ -1,5 +1,6 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -7,12 +8,11 @@ body{
 .mainContainer {
     border: 4px solid blanchedalmond;
     border-radius: 4px;
-    margin-top: 20vh;
-    width: 160px;
-    height: 160px;
+    margin-top: 10vh;
+    width: 230px;
+    height: 230px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .over {
