@@ -1,6 +1,5 @@
 const btn = document.querySelector('button')
 let size;
-let grids;
 let num = 0;
 
 btn.addEventListener('click', () => {
@@ -18,12 +17,12 @@ function createGrid(){
     for(x=0; x<(size ** 2);x++){
         const grid = document.createElement('div');
         grid.className = "grid";
-        grid.style.cssText = "background-color: black;"
+        grid.style.backgroundColor = "black"
         grid.style.width =  `${width}px`;
         grid.style.height =  `${width}px`;
         mainContainer.append(grid);
     }
-    grids = document.querySelectorAll(".grid");
+    const grids = document.querySelectorAll(".grid");
     grids.forEach(x => x.addEventListener("mouseover", () => {
         x.classList.toggle("over");
     }))
